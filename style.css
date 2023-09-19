@@ -37,7 +37,7 @@ body{
     border-radius: 5%;
     position: relative; */
 /* margin-top: 180px; */
-width: 90%; /* Adjusted width for responsiveness */
+    width: 90%; /* Adjusted width for responsiveness */
     max-width: 600px; /* Added maximum width to ensure it doesn't get too wide on large screens */
     background-color: gray;
     padding: 30px; /* Combined padding into a shorthand property */

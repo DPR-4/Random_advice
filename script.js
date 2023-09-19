@@ -5,12 +5,13 @@ const url='	https://api.adviceslip.com/advice';
 const advices=async ()=>{
     let num=Math.floor((Math.random()*214)+1);
     const smile=document.querySelector(".smile");
+    const numberd=document.querySelector(".number");
     try{
         const data=await fetch(`${url}/${num}`);
         const resp=await data.json();
         const advice = resp.slip.advice;
-        console.log(advice)
-        
+        //console.log(advice)
+        numberd.innerHTML=num;
         smile.innerHTML=advice;
         return advice;
     }
